@@ -43,8 +43,10 @@ def create_app(config_name):
     db.init_app(app)
 
     # 导入蓝图
-    from info.modules.news import news_blue
+    from info.modules.views import news_blue
+    from info.api.passport import passport_print
     app.register_blueprint(news_blue)
+    app.register_blueprint(passport_print, url_prefix='/api/v1.0')
 
     return app
 
