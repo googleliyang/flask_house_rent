@@ -8,3 +8,9 @@ def session():
     return jsonify({
         'errno': RET.OK
     })
+
+
+@passport_print.route('/imagecode')
+def imagecode():
+    
+    pass
