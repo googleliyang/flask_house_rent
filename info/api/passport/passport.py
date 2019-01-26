@@ -3,8 +3,8 @@ from flask import jsonify
 from info.utils.response_code import RET
 
 
-@passport_print.route('/session')
+@passport_print.route('/session', methods=['post'])
 def session():
     return jsonify({
-        'status': RET.UNKOWNERR
+        'errno': RET.OK
     })
