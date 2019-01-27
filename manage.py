@@ -37,5 +37,5 @@ python manage.py db upgrade
 
 if __name__ == '__main__':
     # app.run(debug=True)
-    print(app.url_map)
+    # print(app.url_map)
     manage.run()

@@ -49,9 +49,14 @@ def create_app(config_name):
     # 导入蓝图
     from info.modules.views import news_blue
     from info.api.passport import passport_print
+    from info.api.user import user_blue as user_print
+    from info.api.house import house_print
+    from info.api.order import order_print
     app.register_blueprint(news_blue)
     app.register_blueprint(passport_print, url_prefix='/api/v1.0')
-
+    app.register_blueprint(user_print, url_prefix='/api/v1.0')
+    app.register_blueprint(order_print, url_prefix='/api/v1.0')
+    app.register_blueprint(house_print, url_prefix='/api/v1.0')
     return app
 
 

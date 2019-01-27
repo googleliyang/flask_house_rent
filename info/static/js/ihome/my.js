@@ -12,7 +12,7 @@ function logout() {
             "X-CSRFToken": getCookie("csrf_token")
         },
         success: function (resp) {
-            location.href = "/index.html"
+            location.href = "./index.html"
         }
     })
 }

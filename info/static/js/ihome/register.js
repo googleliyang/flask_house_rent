@@ -163,7 +163,7 @@ $(document).ready(function() {
             success: function (resp) {
                 if (resp.errno == "0"){
                     // 直接回到首页
-                    location.href = "/index.html"
+                    location.href = "./index.html"
                 }else {
                     $("#password2-err span").html(resp.errmsg)
                     $("#password2-err").show()

@@ -1,3 +1,4 @@
 {
     "python.pythonPath": "/Users/ly/.virtualenvs/flask_python37_py11/bin/python",
+    "python.linting.pylintArgs": ["--load-plugins", "pylint_flask"] 
 }

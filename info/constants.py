@@ -5,7 +5,8 @@ IMAGE_CODE_REDIS_EXPIRES = 300
 SMS_CODE_REDIS_EXPIRES = 300
 
 # 七牛空间域名
-QINIU_DOMIN_PREFIX = "http://oyucyko3w.bkt.clouddn.com/"
+# QINIU_DOMIN_PREFIX = "http://oyucyko3w.bkt.clouddn.com/"
+QINIU_DOMIN_PREFIX = "http://plo7phtzh.bkt.clouddn.com/"
 
 # 首页展示最多的新闻数量
 HOME_PAGE_MAX_NEWS = 10
@@ -28,3 +29,5 @@ ADMIN_USER_PAGE_MAX_COUNT = 10
 # 管理员页面新闻每页多最数据条数
 ADMIN_NEWS_PAGE_MAX_COUNT = 10
 
+# 房屋评论展示数
+HOUSE_DETAIL_COMMENT_DISPLAY_COUNTS = 3

@@ -8,7 +8,8 @@ class Config:
     SECRET_KEY = 'mMr88P+cvbxFXvcpX9PpiBTWMDLtGNkI7fwKhVv7GWuv9QZyRoyUsw=='
 
     # 配置数据库的链接
-    SQLALCHEMY_DATABASE_URI = 'mysql://python37_11:x864dxNPP2X4NnMk@149.129.106.112/python37_11'
+    # SQLALCHEMY_DATABASE_URI = 'mysql://python37_11:x864dxNPP2X4NnMk@149.129.106.112/python37_11'
+    SQLALCHEMY_DATABASE_URI = 'mysql://root:123456@127.0.0.1/python_11'
     SQLALCHEMY_TRACK_MODIFICATIONS = False
  
     # 配置状态保持session信息的存储

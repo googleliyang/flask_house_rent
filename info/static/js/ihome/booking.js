@@ -93,9 +93,9 @@ $(document).ready(function(){
             contentType: "application/json",
             success: function (resp) {
                 if (resp.errno == "0"){
-                    location.href = "/orders.html"
+                    location.href = "./orders.html"
                 }else if (resp.errno == "4101") {
-                    location.href = "/login.html"
+                    location.href = "./login.html"
                 }else {
                     alert(resp.errmsg)
                 }

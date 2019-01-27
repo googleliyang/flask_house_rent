@@ -58,6 +58,7 @@ class CCP(object):
         # @param datas 内容数据 格式为数组 例如：{'12','34'}，如不需替换请填 ''
         # @param temp_id 模板Id
         result = self.rest.sendTemplateSMS(to, datas, temp_id)
+        print('云通讯返回状态码为', result.get("statusCode"))
         # 如果云通讯发送短信成功，返回的字典数据result中statuCode字段的值为"000000"
         if result.get("statusCode") == "000000":
             # 返回0 表示发送短信成功
@@ -70,4 +71,5 @@ class CCP(object):
 if __name__ == '__main__':
     ccp = CCP()
     # 注意： 测试的短信模板编号为1
-    ccp.send_template_sms('18949599846', ['1234', 5], 1)
+    res = ccp.send_template_sms('1346842658', ['1234', 5], 1)
+    print(res)
